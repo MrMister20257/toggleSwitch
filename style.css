@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  background: #ccc3;
+  width: 80%;
+  min-height: 100svh;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  padding: 1.5rem;
+}
+
+h2{
+  padding: 0.5rem 2rem;
+  border: solid 0.2rem red;
+}
+
+.boxContainer1, .boxContainer2{
+  width: 40rem;
+  min-height: 15rem;
+  margin: auto;
+  padding: 0.3rem;
+  border: solid;
+}
+
+/* Aufgabe 1 */
+
+.boxContainer1 #box1, #article1, #article2, #article3, #article4 {
+  display: none;
+}
+
+#box1{
+  padding: 1rem 2rem;
+}
+
+#article1:checked ~ #box1{
+  display: block;
+}
+
+
+/* Aufgabe 2 */
+
+.article2 #box2{
+  height: 0;
+  padding: 0 2rem;
+  overflow: hidden;
+  transition: 2s;
+  border: solid;
+}
+
+#article2:checked ~ #box2{
+  height: 5.5rem;
+  padding: 1rem 2rem;
+  /* Transition funktioniert nur mit einem festen height Wert nicht mit height: auto ! */
+  transition: 2s;
+}
+
+/* Aufgabe 3 */
+
+#radio1, #radio2{
+  display: none;
+}
+
+.article3 article, .article4 article{
+  height: 0;
+  padding: 0 2rem;
+  overflow: hidden;
+  transition: 0.5s;
+  border: solid;
+}
+
+#radio1:checked ~ article, #radio2:checked ~ article{
+  height: 5.5rem;
+  padding: 1rem 2rem;
+  transition: 3s;
+}
