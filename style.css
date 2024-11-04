@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    height: 100dvh;
+    padding: 2rem;
+}
+
+.boxContainer1,
+.boxContainer2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+}
+
+.boxContainer2 {
+    margin-top: 2rem;
+}
+
+label {
+    border: solid 1px rgb(255, 39, 39);
+    display: block;
+    padding: 1rem;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.toggleSwitchBox,
+.toggleSwitchBox2,
+.toggleSwitchBox3,
+.toggleSwitchBox4  {
+    width: 100%;
+    display: inline-block;
+    padding: 0rem 0.2rem;
+}
+
+.toggleSwitchBox {
+    padding-top: 0.2rem;
+}
+
+.toggleSwitchBox2 {
+    padding-bottom: 0.2rem;
+}
+
+#aufklappbarerPtag {
+    display: none;
+}
+
+#ausfahrbarerPtag,
+#ausfahrbarerPtag2,
+#ausfahrbarerPtag3 {
+    border: solid 1px black;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.6s ease-in-out;
+}
+
+#pChecker:checked + #aufklappbarerPtag {
+    display: block;
+}
+
+#pChecker2:checked + #ausfahrbarerPtag {
+    max-height: 120px;
+}
+
+#pChecker3:checked + #ausfahrbarerPtag2 {
+    max-height: 120px;
+}
+
+#pChecker4:checked + #ausfahrbarerPtag3 {
+    max-height: 120px;
+}
+
+p {
+    margin: 1rem;
+}
+
